@@ -34,4 +34,4 @@ print("Exercise 5: ", len(x))
 # YOUR CODE HERE
 print("Exercise 6: ")
 for i in x:
-  print(i * 1000)
+    print(i * 1000)
