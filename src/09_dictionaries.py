@@ -45,7 +45,7 @@ my_waypoint = {
 # Add to the end of waypoints list
 waypoints.append(my_waypoint)
 # Take a look!
-print("Exercise 1: ", waypoints)
+print("--- Exercise 1: ", waypoints)
 
 # Modify the dictionary with name "a place" such that its longitude
 # value is -130 and change its name to "not a real place"
@@ -60,11 +60,11 @@ waypoints[0].update({
     "name": "not a real place"
 })
 # Check it out!
-print("Exercise 2: ", waypoints[0])
+print("--- Exercise 2: ", waypoints[0])
 
 # Write a loop that prints out all the field values for all the waypoints
 # YOUR CODE HERE
 
-print("Exercise 3: ")
+print("--- Exercise 3: ")
 for i in range(len(waypoints)):
     print(waypoints[i].values())
