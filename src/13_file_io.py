@@ -26,5 +26,5 @@ for line in f:
 # YOUR CODE HERE
 
 b = open('bar.txt', 'w')
-print("--- Exercise 2: ")
+print("\n\n--- Exercise 2: ")
 b.write('Line 1\nLine 2\nLine 3')
