@@ -34,6 +34,7 @@ from datetime import datetime
 # Puts today's date on the today variable
 today = datetime.now()
 
+
 def new_calendar():
     # Month/year are initially assigned to today's, to be replaced with user input
     # If user doesn't input something, it will display today's value for that input
@@ -55,5 +56,6 @@ def new_calendar():
     # Default to current month and year
     else:
         create_calender()
+
 
 new_calendar()

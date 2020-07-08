@@ -13,10 +13,12 @@ class LatLon():
 
 # YOUR CODE HERE
 
+
 class Waypoint(LatLon):
     def __init__(self, name, lat, lon):
         super().__init__(lat, lon)
         self.name = name
+
     def __str__(self):
         return "Name: {self.name}, \nLat: {self.lat}, \nLon: {self.lon}".format(self=self)
 
@@ -25,11 +27,13 @@ class Waypoint(LatLon):
 
 # YOUR CODE HERE
 
+
 class Geocache(Waypoint):
     def __init__(self, name, difficulty, size, lat, lon):
         super().__init__(name, lat, lon)
         self.difficulty = difficulty
         self.size = size
+
     def __str__(self):
         return "Name: {self.name}, \nDifficulty: {self.difficulty}, \nSize: {self.size} \nLat: {self.lat}, \nLon: {self.lon}".format(self=self)
 
@@ -37,9 +41,11 @@ class Geocache(Waypoint):
 
 # YOUR CODE HERE
 
+
 new_waypoint = Waypoint("Catacombs", 41.70505, -121.51521)
 print("--- New waypoint: ")
-print("Name:", new_waypoint.name, "\nLat:", new_waypoint.lat, "\nLon:", new_waypoint.lon)
+print("Name:", new_waypoint.name, "\nLat:",
+      new_waypoint.lat, "\nLon:", new_waypoint.lon)
 
 # Without changing the following line, how can you make it print into something
 # more human-readable? Hint: Look up the `object.__str__` method
